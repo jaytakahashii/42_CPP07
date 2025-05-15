@@ -2,22 +2,26 @@
 
 template <typename T>
 class Array {
-  // 宣言だけを書く
+ private:
+  T* _array;
+  unsigned int _size;
+
  public:
+  // === OCF ===
   Array();
-  Array(unsigned int n);
   Array(const Array& other);
   Array& operator=(const Array& other);
   ~Array();
 
+  // === Constructors ===
+  Array(unsigned int n);
+
+  // === Operators ===
   T& operator[](unsigned int index);
   const T& operator[](unsigned int index) const;
 
+  // === Methods ===
   unsigned int size() const;
-
- private:
-  T* _array;
-  unsigned int _size;
 };
 
-#include "Array.tpp"
+#include "Array.tpp"  // Include the implementation file (.tpp)
