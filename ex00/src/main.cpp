@@ -22,8 +22,8 @@ int main(void) {
 
   std::cout << YELLOW << "\n=== TEST 2 ===" << RESET << std::endl;
 
-  std::string c = "42tokyo";
-  std::string d = "24tokyo";
+  std::string c = "chaine1";
+  std::string d = "chaine2";
   std::cout << BOLDWHITE << "Before swap: " << RESET << "c = " << c
             << ", d = " << d << std::endl;
 
