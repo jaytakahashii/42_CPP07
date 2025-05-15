@@ -9,6 +9,7 @@ INCLUDE_DIR	= include/
 INCLUDE			= -I $(INCLUDE_DIR)
 HEADERS			= color.hpp \
 							Array.hpp \
+							Array.tpp \
 HEADER			= $(addprefix $(INCLUDE_DIR), $(HEADERS))
 
 DEPS				= $(HEADER) $(MAKEFILE)
