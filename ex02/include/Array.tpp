@@ -2,6 +2,7 @@
 #include <stdexcept>
 
 #include "Array.hpp"
+#include "color.hpp"
 
 template <typename T>
 Array<T>::Array() : _array(NULL), _size(0) {
@@ -38,14 +39,14 @@ Array<T>::~Array() {
 template <typename T>
 T& Array<T>::operator[](unsigned int index) {
   if (index >= _size)
-    throw std::out_of_range("Index out of range");
+    throw std::out_of_range(RED "Index out of range" RESET);
   return _array[index];
 }
 
 template <typename T>
 const T& Array<T>::operator[](unsigned int index) const {
   if (index >= _size)
-    throw std::out_of_range("Index out of range");
+    throw std::out_of_range(RED "Index out of range" RESET);
   return _array[index];
 }
 
