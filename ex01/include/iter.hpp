@@ -1,7 +1,5 @@
 #pragma once
 
-#include <cstddef>  // for size_t
-
 template <typename T>
 void iter(T *array, size_t length, void (*func)(T &)) {
   if (array == NULL || func == NULL) {
