@@ -1,7 +1,7 @@
 #pragma once
 
-template <typename T>
-void iter(T *array, size_t length, void (*func)(T &)) {
+template <typename T, typename U>
+void iter(T *array, size_t length, void (*func)(U &)) {
   if (array == NULL || func == NULL) {
     return;
   }
